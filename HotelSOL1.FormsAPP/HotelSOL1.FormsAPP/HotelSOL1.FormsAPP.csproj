@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="C:\Users\Administrator\OneDrive\Escritorio\uni\producto2CapaDatos(P59)_DiazRisso_Ingrid\HotelSOL\HotelSOL.DataAccess\HotelSOL.DataAccess.csproj" />
+	  <ProjectReference Include="D:\HotelSOL\HotelSOL.DataAccess\HotelSOL.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
