@@ -26,33 +26,46 @@ namespace HotelSOL.DataAccess.Services
         {
             return _context.Clientes.ToList();
         }
+        public bool ExisteCliente(string email)
+        {
+            return _context.Clientes.Any(c => c.Email == email);
+        }
+
 
         // Actualizar cliente con validación de datos
-        public bool ActualizarCliente(int ClienteId, string nuevoEmail)
+        public bool ActualizarCliente(int id, string nuevoEmail, string nuevoTelefono)
         {
-            var cliente = _context.Clientes.FirstOrDefault(c => c.ClienteId == ClienteId);
+            var cliente = _context.Clientes.FirstOrDefault(c => c.ClienteId == id);
             if (cliente == null) return false;
 
             if (!string.IsNullOrWhiteSpace(nuevoEmail))
-            {
                 cliente.Email = nuevoEmail;
-                _context.SaveChanges();
-                return true;
-            }
 
-            return false;
+            if (!string.IsNullOrWhiteSpace(nuevoTelefono))
+                cliente.Telefono = nuevoTelefono;
+
+            _context.SaveChanges();
+            return true;
         }
 
+
         // Eliminar cliente con verificación de existencia
-        public bool EliminarCliente(int ClienteId)
+        public bool EliminarCliente(int id)
         {
-            var cliente = _context.Clientes.FirstOrDefault(c => c.ClienteId == ClienteId);
+            var cliente = _context.Clientes.FirstOrDefault(c => c.  ClienteId == id);
             if (cliente == null) return false;
+
+            bool tieneReservasActivas = _context.Reservas.Any(r => r.ClienteId == id && r.FechaFin >= DateTime.Today);
+            if (tieneReservasActivas)
+            {
+                return false; // No permitir eliminación si el cliente tiene reservas activas
+            }
 
             _context.Clientes.Remove(cliente);
             _context.SaveChanges();
             return true;
         }
+
 
         // Obtener lista de clientes VIP
         public List<Cliente> ObtenerClientesVIP()

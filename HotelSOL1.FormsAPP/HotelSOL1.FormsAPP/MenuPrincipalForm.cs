@@ -1,58 +1,184 @@
 ﻿using HotelSOL.DataAccess.Services;
-using HotelSOL1.FormsAPP;
+using HotelSOL.DataAccess.Models;
 using System;
 using System.Windows.Forms;
+using Microsoft.EntityFrameworkCore;
+using HotelSOL.DataAccess.Service;
 
 namespace HotelSOL1.FormsAPP
 {
     public partial class MenuPrincipalForm : Form
     {
-        // Constructor del formulario
-        public MenuPrincipalForm()
+        private Usuario usuarioAutenticado; // 🔹 Guardamos el usuario autenticado
+
+        public MenuPrincipalForm(Usuario usuario)
         {
             InitializeComponent();
+            usuarioAutenticado = usuario;
+
+            if (usuarioAutenticado != null)
+            {
+                lblUsuario.Text = $"Bienvenido, {usuarioAutenticado.Nombre} ({usuarioAutenticado.Rol})";
+                ConfigurarMenuSegunRol();
+            }
+            else
+            {
+                lblUsuario.Text = "Bienvenido, Usuario desconocido";
+            }
         }
 
-        // Al cargar el formulario puedes hacer algún pre-carga de datos si es necesario
-        private void MenuPrincipalForm_Load(object sender, EventArgs e)
+
+        private void ConfigurarMenuSegunRol()
         {
-            // Puedes usar esto para cargar datos si lo necesitas más adelante
+            lblUsuario.Text = $"Bienvenido, {usuarioAutenticado.Nombre} ({usuarioAutenticado.Rol})";
+
+            switch (usuarioAutenticado.Rol)
+            {
+                case "Administrador":
+                    btnRegistrarCliente.Visible = true;
+                    btnCrearReserva.Visible = true;
+                    btnVerReservas.Visible = true;
+                    btnGenerarFactura.Visible = true;
+                    btnExportarOdoo.Visible = true;
+                    btnRegistrarUsuario.Visible = true;
+
+                    break;
+
+                case "Encargado":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = false;
+                    btnVerReservas.Visible = true; // 🔹 Supervisa reservas
+                    btnGenerarFactura.Visible = false;
+                    btnExportarOdoo.Visible = true;
+                    btnRegistrarUsuario.Visible = false;// 🔹 Acceso a gestión de proveedores y pedidos
+                    break;
+
+                case "Recepcionista":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = true;
+                    btnVerReservas.Visible = true;
+                    btnGenerarFactura.Visible = true;
+                    btnExportarOdoo.Visible = false;
+                    btnRegistrarUsuario.Visible = false;
+                    break;
+
+                case "Cliente":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = true;
+                    btnVerReservas.Visible = true;
+                    btnGenerarFactura.Visible = true;
+                    btnExportarOdoo.Visible = false;
+                    btnRegistrarUsuario.Visible = false;
+                    break;
+
+                case "Contable":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = false;
+                    btnVerReservas.Visible = false;
+                    btnGenerarFactura.Visible = true; // 🔹 Solo consulta facturas y análisis financiero
+                    btnExportarOdoo.Visible = true;
+                    btnRegistrarUsuario.Visible = false;
+                    break;
+
+                case "Personal Limpieza":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = false;
+                    btnVerReservas.Visible = false;
+                    btnGenerarFactura.Visible = false;
+                    btnExportarOdoo.Visible = false;
+                    btnRegistrarUsuario.Visible = false;
+                    MessageBox.Show("🔹 Acceso a habitaciones por limpiar.");
+                    break;
+
+                case "Personal Restauración":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = false;
+                    btnVerReservas.Visible = false;
+                    btnGenerarFactura.Visible = false;
+                    btnExportarOdoo.Visible = false;
+                    btnRegistrarUsuario.Visible = false;
+                    MessageBox.Show("🔹 Acceso a pedidos de clientes.");
+                    break;
+
+                case "Marketing y Publicidad":
+                    btnRegistrarCliente.Visible = false;
+                    btnCrearReserva.Visible = false;
+                    btnVerReservas.Visible = false;
+                    btnGenerarFactura.Visible = false;
+                    btnExportarOdoo.Visible = true; // 🔹 Acceso a gestión de redes y descuentos VIP
+                    btnRegistrarUsuario.Visible = false;
+                    break;
+
+                default:
+                    MessageBox.Show("❌ Rol no reconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
         }
 
-        // Evento cuando se hace clic en "Registrar Cliente"
+
+        private void btnRegistrarUsuario_Click(object sender, EventArgs e)
+        {
+            var usuarioService = new UsuarioService(Program.DbContext);
+            var form = new RegistrarUsuarioForm(usuarioService);
+            form.ShowDialog();
+        }
+
+
         private void btnRegistrarCliente_Click(object sender, EventArgs e)
         {
-            var clienteService = new ClienteService(Program.DbContext); // Asegúrate de que Program.DbContext esté bien configurado
+            var clienteService = new ClienteService(Program.DbContext);
             var form = new RegistrarClienteForm(clienteService);
-            form.ShowDialog(); // Muestra el formulario de registrar cliente
+            form.ShowDialog();
         }
 
-        // Evento cuando se hace clic en "Crear Reserva"
         private void btnCrearReserva_Click(object sender, EventArgs e)
         {
-            var form = new CrearReservaForm(); // Enlaza el formulario de creación de reserva
-            form.ShowDialog(); // Muestra el formulario
+            var clienteService = new ClienteService(Program.DbContext);
+            var habitacionService = new HabitacionService(Program.DbContext);
+            var reservaService = new ReservaService(Program.DbContext);
+
+            var form = new CrearReservaFrom(clienteService, habitacionService, reservaService);
+            form.ShowDialog();
         }
 
-        // Evento cuando se hace clic en "Generar Factura"
-        private void btnGenerarFactura_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("🧾 Aquí se generará una factura.");
-        }
 
-        // Evento cuando se hace clic en "Ver Reservas"
         private void btnVerReservas_Click(object sender, EventArgs e)
         {
-            // Aquí se pasa el servicio de reserva al formulario de ver reservas
-            var reservaService = new ReservaService(Program.DbContext); // Asegúrate de que Program.DbContext esté bien configurado
+            var reservaService = new ReservaService(Program.DbContext);
             var form = new VerReservasForm(reservaService);
-            form.ShowDialog(); // Muestra el formulario de ver reservas
+            form.ShowDialog();
         }
 
-        // Evento cuando se hace clic en "Salir"
+        private void btnGenerarFactura_Click(object sender, EventArgs e)
+        {
+            var facturaService = new FacturaService(Program.DbContext);
+            var reservaService = new ReservaService(Program.DbContext);
+
+            // 🔹 Aquí obtienes una reserva específica (puedes obtener el ID desde un TextBox o selección)
+            int reservaId = 1; // Reemplázalo con la lógica para obtener el ID dinámicamente
+            var reserva = reservaService.ObtenerReservaPorId(reservaId); // Método para buscar la reserva
+
+            if (reserva == null)
+            {
+                MessageBox.Show("❌ La reserva no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var form = new GenerarFacturaForm(reserva, facturaService); // ✅ Ahora pasamos una reserva válida
+            form.ShowDialog();
+        }
+
+       
+
+        private void btnExportarOdoo_Click(object sender, EventArgs e)
+        {
+            var form = new ExportarOdooForm();
+            form.ShowDialog();
+        }
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit(); // Cierra la aplicación
+            Application.Exit();
         }
     }
 }

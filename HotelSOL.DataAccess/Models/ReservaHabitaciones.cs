@@ -7,7 +7,8 @@
         public int HabitacionId { get; set; }
 
         // Relación con Reserva y Habitacion
-        public Reserva Reserva { get; set; } // No inicializar aquí
-        public Habitacion Habitacion { get; set; } // No inicializar aquí
+        public Reserva Reserva { get; set; }
+        public Habitacion Habitacion { get; set; }
+
     }
 }

@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HotelSOL.DataAccess",
-    "\\HotelSOL.DataAccess\\DbContext",
-    "\\HotelSOL.DataAccess\\obj",
-    "\\HotelSOL.DataAccess\\Service",
-    "\\HotelSOL1.FormsAPP"
+    "\\HotelSOL.ConsoleApp",
+    "\\HotelSOL.ConsoleApp\\bin",
+    "\\HotelSOL.ConsoleApp\\bin\\Debug"
   ],
+  "SelectedNode": "\\HotelSOL1.FormsAPP",
   "PreviewInSolutionExplorer": false
 }

@@ -3,16 +3,13 @@
     public class Habitacion
     {
         public int Id { get; set; }
-        public string Tipo { get; set; } = "Pendiente";
+        public int TipoId { get; set; }
+        public string Numero { get; set; }
         public int Capacidad { get; set; }
-        public decimal Precio_base { get; set; }
-        public bool disponibilidad { get; set; } = true;
+        public bool Disponible { get; set; } = true; // Indica si está libre o no
 
-        // Agregar propiedades faltantes
-       
-
-        // Relación con ReservaHabitaciones
         public ICollection<ReservaHabitaciones> ReservaHabitaciones { get; set; } = new List<ReservaHabitaciones>();
-
+        public TipoHabitacion TipoHabitacion { get; set; }
     }
+
 }

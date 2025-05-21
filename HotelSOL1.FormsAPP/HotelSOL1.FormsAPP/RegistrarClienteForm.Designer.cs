@@ -19,6 +19,10 @@
         private CheckBox chkVIP;
         private Button btnGuardar;
         private Button btnCancelar;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Label lblContraseña; 
+
+
 
         protected override void Dispose(bool disposing)
         {
@@ -41,6 +45,8 @@
             this.txtEmail = new TextBox();
             this.lblTelefono = new Label();
             this.txtTelefono = new TextBox();
+            this.lblContraseña = new Label();
+            this.txtContraseña = new TextBox();
             this.chkVIP = new CheckBox();
             this.btnGuardar = new Button();
             this.btnCancelar = new Button();
@@ -76,18 +82,32 @@
             lblTelefono.Location = new Point(30, 220);
             txtTelefono.Location = new Point(130, 220);
 
+            // Contraseña
+
+            this.lblContraseña.Text = "Contraseña:";
+            this.lblContraseña.Location = new Point(30, 260); // 🔹 Ajusta la posición correcta
+            this.Controls.Add(this.lblContraseña);
+
+
+            this.txtContraseña.Location = new Point(130, 260); // 🔹 Ahora está debajo de los otros campos
+            this.txtContraseña.Size = new Size(200, 23);
+            this.txtContraseña.UseSystemPasswordChar = true; // 🔹 Oculta el texto de la contraseña
+            this.Controls.Add(this.txtContraseña);
+
+
+
             // chkVIP
             chkVIP.Text = "¿Cliente VIP?";
-            chkVIP.Location = new Point(130, 260);
+            chkVIP.Location = new Point(130, 300);
 
             // btnGuardar
             btnGuardar.Text = "Guardar";
-            btnGuardar.Location = new Point(50, 300);
+            btnGuardar.Location = new Point(50, 340);
             btnGuardar.Click += new EventHandler(this.btnGuardar_Click);
 
             // btnCancelar
             btnCancelar.Text = "Cancelar";
-            btnCancelar.Location = new Point(180, 300);
+            btnCancelar.Location = new Point(180, 340);
             btnCancelar.Click += new EventHandler(this.btnCancelar_Click);
 
             // RegistrarClienteForm
@@ -99,9 +119,12 @@
                 lblDireccion, txtDireccion,
                 lblEmail, txtEmail,
                 lblTelefono, txtTelefono,
+                lblContraseña, txtContraseña, // 🔹 Agregado correctamente
                 chkVIP,
                 btnGuardar, btnCancelar
             });
+
+
             this.Text = "Registrar Cliente";
             this.StartPosition = FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

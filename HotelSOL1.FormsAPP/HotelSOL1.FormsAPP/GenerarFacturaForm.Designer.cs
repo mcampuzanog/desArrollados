@@ -2,99 +2,76 @@
 {
     partial class GenerarFacturaForm
     {
-        private System.ComponentModel.IContainer components = null;
-
-        private Label lblCliente;
-        private Label lblFechaEntrada;
-        private Label lblFechaSalida;
-        private Label lblMonto;
-        private Button btnGenerarFactura;
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        private System.Windows.Forms.DataGridView dgvFacturas;
+        private System.Windows.Forms.Button btnGenerarFactura;
+        private System.Windows.Forms.Label lblMonto;
+        private System.Windows.Forms.TextBox txtReservaId;
+        private System.Windows.Forms.Label lblReservaId;
+        private System.Windows.Forms.Button btnCerrar;
 
         private void InitializeComponent()
         {
-            lblCliente = new Label();
-            lblFechaEntrada = new Label();
-            lblFechaSalida = new Label();
-            lblMonto = new Label();
-            btnGenerarFactura = new Button();
-            SuspendLayout();
+            this.dgvFacturas = new System.Windows.Forms.DataGridView();
+            this.btnGenerarFactura = new System.Windows.Forms.Button();
+            this.lblMonto = new System.Windows.Forms.Label();
+            this.txtReservaId = new System.Windows.Forms.TextBox();
+            this.lblReservaId = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
 
             // 
-            // lblCliente
+            // dgvFacturas
             // 
-            lblCliente.AutoSize = true;
-            lblCliente.Location = new Point(30, 30);
-            lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(150, 25);
-            lblCliente.TabIndex = 0;
-            lblCliente.Text = "Cliente: (Nombre)";
-            lblCliente.Click += new System.EventHandler(this.lblCliente_Click);
+            this.dgvFacturas.Location = new System.Drawing.Point(20, 20);
+            this.dgvFacturas.Size = new System.Drawing.Size(500, 200);
+            this.dgvFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 
             // 
-            // lblFechaEntrada
+            // lblReservaId
             // 
-            lblFechaEntrada.AutoSize = true;
-            lblFechaEntrada.Location = new Point(30, 60);
-            lblFechaEntrada.Name = "lblFechaEntrada";
-            lblFechaEntrada.Size = new Size(245, 25);
-            lblFechaEntrada.TabIndex = 1;
-            lblFechaEntrada.Text = "Fecha Entrada: (dd/mm/yyyy)";
-            lblFechaEntrada.Click += new System.EventHandler(this.lblFechaEntrada_Click);
+            this.lblReservaId.Text = "ID de Reserva:";
+            this.lblReservaId.Location = new System.Drawing.Point(20, 240);
 
             // 
-            // lblFechaSalida
+            // txtReservaId
             // 
-            lblFechaSalida.AutoSize = true;
-            lblFechaSalida.Location = new Point(30, 90);
-            lblFechaSalida.Name = "lblFechaSalida";
-            lblFechaSalida.Size = new Size(232, 25);
-            lblFechaSalida.TabIndex = 2;
-            lblFechaSalida.Text = "Fecha Salida: (dd/mm/yyyy)";
-            lblFechaSalida.Click += new System.EventHandler(this.lblFechaSalida_Click);
-
-            // 
-            // lblMonto
-            // 
-            lblMonto.AutoSize = true;
-            lblMonto.Location = new Point(30, 120);
-            lblMonto.Name = "lblMonto";
-            lblMonto.Size = new Size(127, 25);
-            lblMonto.TabIndex = 3;
-            lblMonto.Text = "Monto Total: $";
+            this.txtReservaId.Location = new System.Drawing.Point(120, 240);
+            this.txtReservaId.Size = new System.Drawing.Size(100, 22);
 
             // 
             // btnGenerarFactura
             // 
-            btnGenerarFactura.Location = new Point(30, 160);
-            btnGenerarFactura.Name = "btnGenerarFactura";
-            btnGenerarFactura.Size = new Size(150, 30);
-            btnGenerarFactura.TabIndex = 4;
-            btnGenerarFactura.Text = "Generar Factura";
-            btnGenerarFactura.UseVisualStyleBackColor = true;
-            btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
+            this.btnGenerarFactura.Text = "Generar Factura";
+            this.btnGenerarFactura.Location = new System.Drawing.Point(250, 240);
+            this.btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
+
+            // 
+            // lblMonto
+            // 
+            this.lblMonto.Text = "Monto Total: $0.00";
+            this.lblMonto.Location = new System.Drawing.Point(20, 280);
+            this.lblMonto.AutoSize = true;
+
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.Location = new System.Drawing.Point(420, 240);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
 
             // 
             // GenerarFacturaForm
             // 
-            ClientSize = new Size(300, 220);
-            Controls.Add(btnGenerarFactura);
-            Controls.Add(lblMonto);
-            Controls.Add(lblFechaSalida);
-            Controls.Add(lblFechaEntrada);
-            Controls.Add(lblCliente);
-            Name = "GenerarFacturaForm";
-            Text = "Generar Factura";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(550, 320);
+            this.Controls.Add(this.dgvFacturas);
+            this.Controls.Add(this.lblReservaId);
+            this.Controls.Add(this.txtReservaId);
+            this.Controls.Add(this.btnGenerarFactura);
+            this.Controls.Add(this.lblMonto);
+            this.Controls.Add(this.btnCerrar);
+            this.Text = "Generar Factura";
         }
     }
 }
+

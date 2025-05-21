@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using HotelSOL.DataAccess.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace HotelSOL.DataAccess.Services
 {
@@ -26,8 +27,10 @@ namespace HotelSOL.DataAccess.Services
         // Obtener reservas activas
         public List<Reserva> ObtenerReservasActivas()
         {
-            return _context.Reservas.Where(r => r.FechaFin >= DateTime.Today).ToList();
+            return _context.Reservas.Include(r => r.ReservaHabitaciones).Where(r => r.FechaFin >= DateTime.Today).ToList() ?? new List<Reserva>();
         }
+
+
 
         // Registrar una nueva reserva
         public void RegistrarReserva(Reserva nuevaReserva, List<int> habitacionesIds)
@@ -38,7 +41,6 @@ namespace HotelSOL.DataAccess.Services
             _context.Reservas.Add(nuevaReserva);
             _context.SaveChanges();
 
-            // Relacionar habitaciones con la reserva
             foreach (var habitacionId in habitacionesIds)
             {
                 var reservaHabitacion = new ReservaHabitaciones
@@ -52,15 +54,101 @@ namespace HotelSOL.DataAccess.Services
             _context.SaveChanges();
         }
 
+
         // Cancelar reserva por ID
         public bool CancelarReserva(int reservaId)
         {
             var reserva = _context.Reservas.FirstOrDefault(r => r.Id == reservaId);
             if (reserva == null) return false;
 
-            _context.Reservas.Remove(reserva);
+
+            if (reserva == null || reserva.Estado != EstadoReserva.Cancelada) // En vez de eliminarla, la marcamos como cancelada
+                _context.SaveChanges();
+            return true;
+        }
+
+        public bool RegistrarCheckIn(int reservaId)
+        {
+            var reserva = _context.Reservas.Include(r => r.ReservaHabitaciones)
+                                           .FirstOrDefault(r => r.Id == reservaId);
+
+
+            if (reserva == null || reserva.Estado != EstadoReserva.Confirmada)
+                return false; // Validar que la reserva existe y está confirmada
+
+            reserva.Estado = EstadoReserva.CheckIn; // En lugar de "Check-In"
             _context.SaveChanges();
             return true;
         }
+
+        public bool RegistrarCheckOut(int reservaId)
+        {
+            var reserva = _context.Reservas.Include(r => r.ReservaHabitaciones)
+                                           .FirstOrDefault(r => r.Id == reservaId);
+
+            if (reserva == null || reserva.Estado != EstadoReserva.CheckIn)
+                return false; // Asegurar que el cliente hizo check-in antes de hacer check-out
+            reserva.Estado = EstadoReserva.CheckOut;
+            _context.SaveChanges();
+            return true;
+        }
+        public bool ConfirmarReserva(int reservaId)
+        {
+            var reserva = _context.Reservas.Find(reservaId);
+            if (reserva == null || reserva.Estado != EstadoReserva.Pendiente)
+                return false; // Solo se confirma si está pendiente
+
+            reserva.Estado = EstadoReserva.Confirmada;
+            _context.SaveChanges();
+            return true;
+        }
+
+        public bool ValidarDisponibilidadHabitacion(int reservaId)
+        {
+            var reserva = _context.Reservas.Include(r => r.ReservaHabitaciones)
+                                           .FirstOrDefault(r => r.Id == reservaId);
+
+            if (reserva == null) return false;
+
+            bool solapamiento = _context.ReservaHabitaciones
+                .Where(rh => rh.ReservaId != reservaId)
+                .Any(rh => _context.Reservas.Any(r => rh.ReservaId == r.Id &&
+                    ((reserva.FechaInicio >= r.FechaInicio && reserva.FechaInicio < r.FechaFin) ||
+                    (reserva.FechaFin > r.FechaInicio && reserva.FechaFin <= r.FechaFin))));
+
+            return !solapamiento;
+        }
+
+        public bool ModificarReserva(int reservaId, DateTime nuevaFechaInicio, DateTime nuevaFechaFin, EstadoReserva nuevoEstado)
+        {
+            var reserva = _context.Reservas.FirstOrDefault(r => r.Id == reservaId);
+        if (reserva == null) return false;
+
+        // Verificar solapamiento con otra reserva en las mismas fechas
+        bool solapamiento = _context.ReservaHabitaciones
+            .Where(rh => rh.ReservaId != reservaId)
+            .Any(rh => _context.Reservas.Any(r =>
+                rh.ReservaId == r.Id &&
+                ((nuevaFechaInicio >= r.FechaInicio && nuevaFechaInicio < r.FechaFin) ||
+                (nuevaFechaFin > r.FechaInicio && nuevaFechaFin <= r.FechaFin))
+            ));
+
+        if (solapamiento) return false; // No permitir modificación si hay conflicto
+
+        reserva.FechaInicio = nuevaFechaInicio;
+        reserva.FechaFin = nuevaFechaFin;
+        reserva.Estado = nuevoEstado;
+
+        _context.SaveChanges();
+        return true;
+
+
+    }
+        public Reserva ObtenerReservaPorId(int reservaId)
+        {
+            return _context.Reservas.Include(r => r.Cliente).FirstOrDefault(r => r.Id == reservaId);
+        }
+
+
     }
 }

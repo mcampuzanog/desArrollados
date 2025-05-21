@@ -9,27 +9,45 @@ namespace HotelSOL1.FormsAPP
     {
         private readonly FacturaService facturaService;
         private readonly Reserva reserva;
+        private Usuario usuarioAutenticado;
 
-        public GenerarFacturaForm(Reserva reserva)
+        public GenerarFacturaForm(Reserva reserva , FacturaService facturaService)
         {
             InitializeComponent();
             this.reserva = reserva;
-            facturaService = new FacturaService(Program.DbContext);
+            this.facturaService = facturaService;
         }
 
-        private void GenerarFacturaForm_Load(object sender, EventArgs e)
+        private void CargarFacturas()
         {
-            // Verificación de Cliente y corrección de nombres de propiedades
-            lblCliente.Text = "Cliente: " + (reserva.Cliente != null ? reserva.Cliente.Nombre : "Sin asignar");
-            lblFechaEntrada.Text = "Fecha Entrada: " + reserva.FechaInicio.ToString("dd/MM/yyyy");
-            lblFechaSalida.Text = "Fecha Salida: " + reserva.FechaFin.ToString("dd/MM/yyyy");
+            List<Factura> facturas;
+
+            if (usuarioAutenticado.Rol == "Cliente")
+            {
+                // 🔹 Los clientes solo ven sus propias facturas
+                facturas = facturaService.ObtenerFacturasPorCliente(usuarioAutenticado.Id);
+            }
+            else
+            {
+                // 🔹 Todos los demás roles ven todas las facturas
+                facturas = facturaService.ObtenerFacturasPorCliente(0); // `0` traerá todas
+            }
+
+            dgvFacturas.DataSource = facturas.Select(f => new
+            {
+                f.Id,
+                Cliente = f.ClienteId,
+                Total = f.MontoTotal,
+                Estado = f.Pagada ? "Pagada" : "Pendiente",
+                Fecha = f.FechaEmision
+            }).ToList();
         }
 
         private void btnGenerarFactura_Click(object sender, EventArgs e)
         {
             try
             {
-                var factura = facturaService.GenerarFactura(reserva.Id, null); // Pasa lista de servicios si es necesario
+                var factura = facturaService.GenerarFactura(reserva.Id, 0);
 
                 lblMonto.Text = "Monto Total: $" + factura.MontoTotal.ToString("0.00");
                 MessageBox.Show("✅ Factura generada exitosamente!");
@@ -39,6 +57,7 @@ namespace HotelSOL1.FormsAPP
                 MessageBox.Show("❌ Error generando la factura: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void lblFechaEntrada_Click(object sender, EventArgs e)
         {
@@ -54,6 +73,12 @@ namespace HotelSOL1.FormsAPP
         {
             // Método vacío para evitar errores de referencia
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Cierra el formulario
+        }
+
     }
 }
 

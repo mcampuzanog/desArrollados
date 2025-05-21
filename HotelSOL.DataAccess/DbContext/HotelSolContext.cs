@@ -16,6 +16,9 @@ namespace HotelSOL.DataAccess
         public DbSet<Servicio> Servicios { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Incidencia> Incidencias { get; set; }
+        public DbSet<TipoHabitacion> TiposHabitaciones { get; set; }
+        public DbSet<Pago> Pagos { get; set; }
+
 
         // Constructor que recibe una cadena de conexión
         public HotelSolContext(DbContextOptions<HotelSolContext> options) : base(options)
@@ -35,11 +38,31 @@ namespace HotelSOL.DataAccess
                 .HasOne(rh => rh.Habitacion)
                 .WithMany(h => h.ReservaHabitaciones)
                 .HasForeignKey(rh => rh.HabitacionId);
+
+
             modelBuilder.Entity<Reserva>()
                 .HasMany(r => r.ReservaHabitaciones)
                 .WithOne(rh => rh.Reserva)
                 .HasForeignKey(rh => rh.ReservaId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Cascade); // Considera el comportamiento de borrad
+            
+            modelBuilder.Entity<Cliente>()
+        .       HasKey(c => c.ClienteId); // 🔹 Define la clave primaria correctamente
+
+            modelBuilder.Entity<Cliente>()
+                 .HasOne(c => c.Usuario)
+                 .WithOne(u => u.Cliente)
+                 .HasForeignKey<Cliente>(c => c.UsuarioId);// 🔹 Define `UsuarioId` como clave foránea en `Cliente`
+
+            modelBuilder.Entity<Habitacion>()
+                .HasOne(h => h.TipoHabitacion)
+                .WithMany(t => t.Habitaciones)
+                .HasForeignKey(h => h.TipoId);
+
+            modelBuilder.Entity<Reserva>()
+                .Property(r => r.Estado)
+                .HasConversion<int>();
+
 
             base.OnModelCreating(modelBuilder);
         }

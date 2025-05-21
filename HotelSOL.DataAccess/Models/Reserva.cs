@@ -1,23 +1,25 @@
 ﻿namespace HotelSOL.DataAccess.Models
 {
+    public enum EstadoReserva
+    {
+        Pendiente,
+        Confirmada,
+        CheckIn,
+        CheckOut,
+        Cancelada
+    }
+
     public class Reserva
     {
         public int Id { get; set; }
         public int ClienteId { get; set; }
         public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }
-        public string Estado { get; set; } = "Pendiente";
-        public string TipoAlojamiento { get; set; } = "Normal";
-        public string Temporada { get; set; } = "Baja";
+        public EstadoReserva Estado { get; set; } = EstadoReserva.Pendiente;
 
-        // Relación con Cliente
-        public Cliente Cliente { get; set; }  // Permitir valores nulos
-
-        // Relación con ReservaHabitaciones
+        public Cliente? Cliente { get; set; }
         public ICollection<ReservaHabitaciones>? ReservaHabitaciones { get; set; }
-
-        // Relación con Factura
-        public Factura? Factura { get; set; }  // Permitir valores nulos para evitar recursión infinita
-
+        public Factura? Factura { get; set; }
     }
+
 }

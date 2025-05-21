@@ -19,12 +19,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="D:\HotelSOL\HotelSOL.DataAccess\HotelSOL.DataAccess.csproj" />
+	  <ProjectReference Include="C:\Users\Administrator\OneDrive\Escritorio\uni\producto2CapaDatos(P59)_DiazRisso_Ingrid\HotelSOL\HotelSOL.DataAccess\HotelSOL.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
