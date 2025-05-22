@@ -137,7 +137,7 @@ namespace HotelSOL1.FormsAPP
             var habitacionService = new HabitacionService(Program.DbContext);
             var reservaService = new ReservaService(Program.DbContext);
 
-            var form = new CrearReservaFrom(clienteService, habitacionService, reservaService);
+            var form = new CrearReservaForm(clienteService, habitacionService, reservaService);
             form.ShowDialog();
         }
 
@@ -168,7 +168,7 @@ namespace HotelSOL1.FormsAPP
             form.ShowDialog();
         }
 
-       
+
 
         private void btnExportarOdoo_Click(object sender, EventArgs e)
         {
@@ -179,6 +179,11 @@ namespace HotelSOL1.FormsAPP
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void MenuPrincipalForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -4,9 +4,6 @@
     <Compile Update="CrearReservaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CrearReservaFrom.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="ExportarOdooForm.cs">
       <SubType>Form</SubType>
     </Compile>

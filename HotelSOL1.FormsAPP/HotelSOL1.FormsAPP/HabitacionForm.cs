@@ -26,8 +26,8 @@ namespace HotelSOL1.FormsAPP
                 numCapacidad.Value = habitacionActual.Capacidad;
                 txtPrecio.Text = habitacionActual.TipoHabitacion.PrecioBase.ToString("F2");
                 chkDisponible.Checked = habitacionActual.Disponible;
-                dtpInicio.Value = habitacionActual.FechaInicio;
-                dtpFin.Value = habitacionActual.FechaFin;
+                dtpInicio.Value = habitacionActual.FechaInicio ?? DateTime.Today;
+                dtpFin.Value = habitacionActual.FechaFin ?? DateTime.Today;
             }
             else
             {

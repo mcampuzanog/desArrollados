@@ -8,6 +8,9 @@
         public int Capacidad { get; set; }
         public bool Disponible { get; set; } = true; // Indica si está libre o no
 
+        public DateTime? FechaInicio { get; set; }
+        public DateTime? FechaFin { get; set; }
+
         public ICollection<ReservaHabitaciones> ReservaHabitaciones { get; set; } = new List<ReservaHabitaciones>();
         public TipoHabitacion TipoHabitacion { get; set; }
     }

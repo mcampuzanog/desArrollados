@@ -8,6 +8,18 @@
         CheckOut,
         Cancelada
     }
+    public enum TipoAlojamiento
+    {
+        Normal,
+        Premium,
+        Suite
+    }
+    public enum Temporada
+    {
+        Baja,
+        Media,
+        Alta
+    }
 
     public class Reserva
     {
@@ -20,6 +32,8 @@
         public Cliente? Cliente { get; set; }
         public ICollection<ReservaHabitaciones>? ReservaHabitaciones { get; set; }
         public Factura? Factura { get; set; }
+        public TipoAlojamiento TipoAlojamiento { get; set; } = TipoAlojamiento.Normal;
+        public Temporada Temporada { get; set; } = Temporada.Baja;
     }
 
 }
