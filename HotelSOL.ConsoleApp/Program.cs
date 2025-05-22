@@ -30,7 +30,7 @@ class Program
                 Telefono = "9954654321",
                 VIP = false
             });
-
+             
             // Listar clientes
             clienteService.ListarClientes();
 

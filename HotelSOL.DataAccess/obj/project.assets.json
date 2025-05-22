@@ -5015,23 +5015,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sergi\\.nuget\\packages\\": {},
+    "C:\\Users\\guill\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
       "projectName": "HotelSOL.DataAccess",
-      "projectPath": "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "D:\\HotelSOL\\HotelSOL.DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guill\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5058,7 +5058,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
+<<<<<<< Updated upstream
       "SdkAnalysisLevel": "9.0.300"
+=======
+      "SdkAnalysisLevel": "9.0.200"
+>>>>>>> Stashed changes
     },
     "frameworks": {
       "net8.0": {
@@ -5099,7 +5103,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       }
     }
   }
