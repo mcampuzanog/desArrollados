@@ -2,9 +2,22 @@
   "ExpandedNodes": [
     "",
     "\\HotelSOL.ConsoleApp",
+<<<<<<< Updated upstream
     "\\HotelSOL.ConsoleApp\\bin",
     "\\HotelSOL.ConsoleApp\\bin\\Debug"
   ],
   "SelectedNode": "\\HotelSOL1.FormsAPP",
+=======
+    "\\HotelSOL1.FormsAPP",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\bin",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\bin\\Debug",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\bin\\Release",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\Debug",
+    "\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\Release"
+  ],
+  "SelectedNode": "\\HotelSOL.DataAccess.sln",
+>>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

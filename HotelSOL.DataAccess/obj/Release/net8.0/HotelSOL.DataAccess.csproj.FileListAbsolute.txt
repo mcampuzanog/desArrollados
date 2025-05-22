@@ -1,0 +1,15 @@
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\bin\Release\net8.0\HotelSOL.DataAccess.deps.json
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\bin\Release\net8.0\HotelSOL.DataAccess.runtimeconfig.json
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\bin\Release\net8.0\HotelSOL.DataAccess.dll
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\bin\Release\net8.0\HotelSOL.DataAccess.pdb
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.csproj.AssemblyReference.cache
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.AssemblyInfoInputs.cache
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.AssemblyInfo.cs
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.sourcelink.json
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.dll
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\refint\HotelSOL.DataAccess.dll
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.pdb
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\HotelSOL.DataAccess.genruntimeconfig.cache
+C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL.DataAccess\obj\Release\net8.0\ref\HotelSOL.DataAccess.dll
