@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotelSOL1.FormsAPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc8afacc422ec07460994904952714fdad0e7f1d")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c2d0b30a87055df42efc36b495b46a6f37e7a73")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("HotelSOL1.FormsAPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotelSOL1.FormsAPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
