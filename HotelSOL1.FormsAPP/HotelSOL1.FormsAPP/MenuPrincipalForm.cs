@@ -185,5 +185,10 @@ namespace HotelSOL1.FormsAPP
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

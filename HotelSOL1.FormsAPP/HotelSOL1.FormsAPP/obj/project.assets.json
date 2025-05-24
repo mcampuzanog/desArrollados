@@ -2,7 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
-<<<<<<< Updated upstream
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -628,8 +627,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-=======
->>>>>>> Stashed changes
       "Microsoft.Extensions.Configuration/9.0.3": {
         "type": "package",
         "dependencies": {
@@ -715,7 +712,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-<<<<<<< Updated upstream
       "Microsoft.Extensions.DependencyInjection/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -771,8 +767,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-=======
->>>>>>> Stashed changes
       "Microsoft.Extensions.FileProviders.Abstractions/9.0.3": {
         "type": "package",
         "dependencies": {
@@ -829,7 +823,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-<<<<<<< Updated upstream
       "Microsoft.Extensions.Logging/9.0.5": {
         "type": "package",
         "dependencies": {
@@ -892,9 +885,6 @@
         }
       },
       "Microsoft.Extensions.Primitives/9.0.5": {
-=======
-      "Microsoft.Extensions.Primitives/9.0.3": {
->>>>>>> Stashed changes
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Primitives.dll": {
@@ -910,7 +900,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-<<<<<<< Updated upstream
       "Microsoft.Identity.Client/4.61.3": {
         "type": "package",
         "dependencies": {
@@ -1371,9 +1360,6 @@
         }
       },
       "System.IO.Pipelines/9.0.5": {
-=======
-      "System.IO.Pipelines/9.0.3": {
->>>>>>> Stashed changes
         "type": "package",
         "compile": {
           "lib/net8.0/System.IO.Pipelines.dll": {
@@ -1389,7 +1375,6 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-<<<<<<< Updated upstream
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -1645,9 +1630,6 @@
         }
       },
       "System.Text.Encodings.Web/9.0.5": {
-=======
-      "System.Text.Encodings.Web/9.0.3": {
->>>>>>> Stashed changes
         "type": "package",
         "compile": {
           "lib/net8.0/System.Text.Encodings.Web.dll": {
@@ -1688,7 +1670,6 @@
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
-<<<<<<< Updated upstream
       },
       "System.Threading.Channels/7.0.0": {
         "type": "package",
@@ -1751,13 +1732,10 @@
         "runtime": {
           "bin/placeholder/HotelSOL.DataAccess.dll": {}
         }
-=======
->>>>>>> Stashed changes
       }
     }
   },
   "libraries": {
-<<<<<<< Updated upstream
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -3088,8 +3066,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-=======
->>>>>>> Stashed changes
     "Microsoft.Extensions.Configuration/9.0.3": {
       "sha512": "RIEeZxWYm77+OWLwgik7DzSVSONjqkmcbuCb1koZdGAV7BgOUWnLz80VMyHZMw3onrVwFCCMHBBdruBPuQTvkg==",
       "type": "package",
@@ -3204,7 +3180,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< Updated upstream
     "Microsoft.Extensions.DependencyInjection/9.0.5": {
       "sha512": "N1Mn0T/tUBPoLL+Fzsp+VCEtneUhhxc1//Dx3BeuQ8AX+XrMlYCfnp2zgpEXnTCB7053CLdiqVWPZ7mEX6MPjg==",
       "type": "package",
@@ -3293,8 +3268,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-=======
->>>>>>> Stashed changes
     "Microsoft.Extensions.FileProviders.Abstractions/9.0.3": {
       "sha512": "umczZ3+QPpzlrW/lkvy+IB0p52+qZ5w++aqx2lTCMOaPKzwcbVdrJgiQ3ajw5QWBp7gChLUiCYkSlWUpfjv24g==",
       "type": "package",
@@ -3379,7 +3352,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< Updated upstream
     "Microsoft.Extensions.Logging/9.0.5": {
       "sha512": "rQU61lrgvpE/UgcAd4E56HPxUIkX/VUQCxWmwDTLLVeuwRDYTL0q/FLGfAW17cGTKyCh7ywYAEnY3sTEvURsfg==",
       "type": "package",
@@ -3528,10 +3500,6 @@
     },
     "Microsoft.Extensions.Primitives/9.0.5": {
       "sha512": "b4OAv1qE1C9aM+ShWJu3rlo/WjDwa/I30aIPXqDWSKXTtKl1Wwh6BZn+glH5HndGVVn3C6ZAPQj5nv7/7HJNBQ==",
-=======
-    "Microsoft.Extensions.Primitives/9.0.3": {
-      "sha512": "yCCJHvBcRyqapMSNzP+kTc57Eaavq2cr5Tmuil6/XVnipQf5xmskxakSQ1enU6S4+fNg3sJ27WcInV64q24JsA==",
->>>>>>> Stashed changes
       "type": "package",
       "path": "microsoft.extensions.primitives/9.0.5",
       "files": [
@@ -3558,7 +3526,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< Updated upstream
     "Microsoft.Identity.Client/4.61.3": {
       "sha512": "naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
       "type": "package",
@@ -4198,10 +4165,6 @@
     },
     "System.IO.Pipelines/9.0.5": {
       "sha512": "5WXo+3MGcnYn54+1ojf+kRzKq1Q6sDUnovujNJ2ky1nl1/kP3+PMil9LPbFvZ2mkhvAGmQcY07G2sfHat/v0Fw==",
-=======
-    "System.IO.Pipelines/9.0.3": {
-      "sha512": "aP1Qh9llcEmo0qN+VKvVDHFMe5Cqpfb1VjhBO7rjmxCXtLs3IfVSOiNqqLBZ/4Qbcr4J0SDdJq9S7EKAGpnwEA==",
->>>>>>> Stashed changes
       "type": "package",
       "path": "system.io.pipelines/9.0.5",
       "files": [
@@ -4228,7 +4191,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-<<<<<<< Updated upstream
     "System.Memory/4.5.4": {
       "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
@@ -4837,10 +4799,6 @@
     },
     "System.Text.Encodings.Web/9.0.5": {
       "sha512": "HJPmqP2FsE+WVUUlTsZ4IFRSyzw40yz0ubiTnsaqm+Xo5fFZhVRvx6Zn8tLXj92/6pbre6OA4QL2A2vnCSKxJA==",
-=======
-    "System.Text.Encodings.Web/9.0.3": {
-      "sha512": "5L+iI4fBMtGwt4FHLQh40/rgdbxnw6lHaLkR3gbaHG97TohzUv+z/oP03drsTR1lKCLhOkp40cFnHYOQLtpT5A==",
->>>>>>> Stashed changes
       "type": "package",
       "path": "system.text.encodings.web/9.0.5",
       "files": [
@@ -4941,7 +4899,6 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-<<<<<<< Updated upstream
     },
     "System.Threading.Channels/7.0.0": {
       "sha512": "qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
@@ -5036,40 +4993,34 @@
       "type": "project",
       "path": "../../HotelSOL.DataAccess/HotelSOL.DataAccess.csproj",
       "msbuildProject": "../../HotelSOL.DataAccess/HotelSOL.DataAccess.csproj"
-=======
->>>>>>> Stashed changes
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-<<<<<<< Updated upstream
       "HotelSOL.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
-=======
-      "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
->>>>>>> Stashed changes
       "Microsoft.Extensions.Configuration >= 9.0.3",
       "Microsoft.Extensions.Configuration.Json >= 9.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\guill\\.nuget\\packages\\": {},
+    "C:\\Users\\sergi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
+      "projectUniqueName": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
       "projectName": "HotelSOL1.FormsAPP",
-      "projectPath": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
-      "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\",
+      "projectPath": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
+      "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
+      "outputPath": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\guill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5100,11 +5051,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-<<<<<<< Updated upstream
       "SdkAnalysisLevel": "9.0.300"
-=======
-      "SdkAnalysisLevel": "9.0.200"
->>>>>>> Stashed changes
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -5144,23 +5091,16 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< Updated upstream
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
       }
     }
   },
   "logs": [
     {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "No se encuentra el proyecto \"D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
-      "libraryId": "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
     }
   ]
 }

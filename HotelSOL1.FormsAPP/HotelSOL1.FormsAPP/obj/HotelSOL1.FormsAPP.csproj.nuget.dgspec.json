@@ -1,13 +1,12 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj": {}
+    "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj": {
+    "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-<<<<<<< Updated upstream
         "projectUniqueName": "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
         "projectName": "HotelSOL.DataAccess",
         "projectPath": "D:\\HotelSOL\\HotelSOL.DataAccess\\HotelSOL.DataAccess.csproj",
@@ -94,19 +93,16 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
-=======
-        "projectUniqueName": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
->>>>>>> Stashed changes
         "projectName": "HotelSOL1.FormsAPP",
-        "projectPath": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
-        "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill\\Documents\\GitHub\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\",
+        "projectPath": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
+        "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
+        "outputPath": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\guill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -137,11 +133,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-<<<<<<< Updated upstream
         "SdkAnalysisLevel": "9.0.300"
-=======
-        "SdkAnalysisLevel": "9.0.200"
->>>>>>> Stashed changes
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -181,11 +173,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< Updated upstream
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
         }
       }
     }
