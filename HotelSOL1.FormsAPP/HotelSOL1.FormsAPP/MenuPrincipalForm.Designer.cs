@@ -7,7 +7,6 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Button btnRegistrarUsuario;
         private System.Windows.Forms.Button btnExportarOdoo;
         private System.Windows.Forms.Button btnRegistrarCliente;
         private System.Windows.Forms.Button btnCrearReserva;
@@ -37,7 +36,6 @@
         private void InitializeComponent()
         {
             lblUsuario = new Label();
-            btnRegistrarUsuario = new Button();
             btnRegistrarCliente = new Button();
             btnCrearReserva = new Button();
             btnGenerarFactura = new Button();
@@ -46,8 +44,9 @@
             btnSalir = new Button();
             btnHabitaciones = new Button();
             btnPago = new Button();
-            button1 = new Button();
-            button2 = new Button();
+            btnContabilidad = new Button();
+            btnProveedorStock = new Button();
+            btnRegistrarUsuario = new Button();
             SuspendLayout();
             // 
             // lblUsuario
@@ -59,18 +58,6 @@
             lblUsuario.Size = new Size(200, 24);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Bienvenido, Usuario";
-            // 
-            // btnRegistrarUsuario
-            // 
-            btnRegistrarUsuario.BackColor = SystemColors.GradientActiveCaption;
-            btnRegistrarUsuario.ForeColor = SystemColors.MenuHighlight;
-            btnRegistrarUsuario.Location = new Point(51, 77);
-            btnRegistrarUsuario.Name = "btnRegistrarUsuario";
-            btnRegistrarUsuario.Size = new Size(220, 50);
-            btnRegistrarUsuario.TabIndex = 1;
-            btnRegistrarUsuario.Text = "👤 Registrar Usuario";
-            btnRegistrarUsuario.UseVisualStyleBackColor = false;
-            btnRegistrarUsuario.Click += btnRegistrarUsuario_Click;
             // 
             // btnRegistrarCliente
             // 
@@ -160,41 +147,56 @@
             btnPago.Name = "btnPago";
             btnPago.Size = new Size(220, 50);
             btnPago.TabIndex = 9;
-            btnPago.Text = "Pago Estancia";
+            btnPago.Text = "💳Pago Estancia";
             btnPago.UseVisualStyleBackColor = false;
+            btnPago.Click += btnPago_Click;
             // 
-            // button1
+            // btnContabilidad
             // 
-            button1.BackColor = SystemColors.GradientActiveCaption;
-            button1.ForeColor = SystemColors.MenuHighlight;
-            button1.Location = new Point(51, 430);
-            button1.Name = "button1";
-            button1.Size = new Size(220, 50);
-            button1.TabIndex = 10;
-            button1.Text = "\U0001f9eeContabilidad";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnContabilidad.BackColor = SystemColors.GradientActiveCaption;
+            btnContabilidad.ForeColor = SystemColors.MenuHighlight;
+            btnContabilidad.Location = new Point(51, 430);
+            btnContabilidad.Name = "btnContabilidad";
+            btnContabilidad.Size = new Size(220, 50);
+            btnContabilidad.TabIndex = 10;
+            btnContabilidad.Text = "\U0001f9eeContabilidad";
+            btnContabilidad.UseVisualStyleBackColor = false;
+            btnContabilidad.Click += button1_Click;
             // 
-            // button2
+            // btnProveedorStock
             // 
-            button2.BackColor = SystemColors.GradientActiveCaption;
-            button2.ForeColor = SystemColors.MenuHighlight;
-            button2.Location = new Point(436, 430);
-            button2.Name = "button2";
-            button2.Size = new Size(220, 50);
-            button2.TabIndex = 11;
-            button2.Text = "📦Stock";
-            button2.UseVisualStyleBackColor = false;
+            btnProveedorStock.BackColor = SystemColors.GradientActiveCaption;
+            btnProveedorStock.ForeColor = SystemColors.MenuHighlight;
+            btnProveedorStock.Location = new Point(436, 430);
+            btnProveedorStock.Name = "btnProveedorStock";
+            btnProveedorStock.Size = new Size(220, 50);
+            btnProveedorStock.TabIndex = 11;
+            btnProveedorStock.Text = "📦Proveedores y Stock";
+            btnProveedorStock.UseVisualStyleBackColor = false;
+            btnProveedorStock.Click += btnStock_Click;
+            // 
+            // btnRegistrarUsuario
+            // 
+            btnRegistrarUsuario.BackColor = SystemColors.GradientActiveCaption;
+            btnRegistrarUsuario.ForeColor = SystemColors.MenuHighlight;
+            btnRegistrarUsuario.Location = new Point(51, 77);
+            btnRegistrarUsuario.Name = "btnRegistrarUsuario";
+            btnRegistrarUsuario.Size = new Size(220, 50);
+            btnRegistrarUsuario.TabIndex = 1;
+            btnRegistrarUsuario.Text = "👤 Registrar Usuario";
+            btnRegistrarUsuario.UseVisualStyleBackColor = false;
+            btnRegistrarUsuario.Click += btnRegistrarUsuario_Click;
             // 
             // MenuPrincipalForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             BackgroundImage = Properties.Resources.LogoHotelSOL;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(729, 600);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(746, 631);
+            Controls.Add(btnProveedorStock);
+            Controls.Add(btnContabilidad);
             Controls.Add(btnPago);
             Controls.Add(btnHabitaciones);
             Controls.Add(lblUsuario);
@@ -218,7 +220,8 @@
 
         private Button btnHabitaciones;
         private Button btnPago;
-        private Button button1;
-        private Button button2;
+        private Button btnContabilidad;
+        private Button btnProveedorStock;
+        private Button btnRegistrarUsuario;
     }
 }

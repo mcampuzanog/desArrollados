@@ -216,7 +216,7 @@
               "RelativeDocumentMoniker": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\MenuPrincipalForm.cs",
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\MenuPrincipalForm.cs",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\MenuPrincipalForm.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAADwv70AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAkwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T15:32:15.583Z",
               "EditorCaption": ""
@@ -255,7 +255,8 @@
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\CrearReservaForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T17:41:49.98Z"
+              "WhenOpened": "2025-05-22T17:41:49.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -267,8 +268,7 @@
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-21T19:00:35.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T19:00:35.373Z"
             },
             {
               "$type": "Document",
@@ -387,8 +387,7 @@
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\GenerarFacturaForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\GenerarFacturaForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:13:17.193Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-19T18:13:17.193Z"
             },
             {
               "$type": "Document",
@@ -568,8 +567,7 @@
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\VerReservasForm.Designer.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAYwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:39:55.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:39:55.067Z"
             },
             {
               "$type": "Document",
@@ -594,8 +592,7 @@
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\RegistrarUsuarioForm.Designer.cs",
               "ViewState": "AQIAAEIAAAAAAAAAAAAYwFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:38:52.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:38:52.61Z"
             },
             {
               "$type": "Document",
@@ -632,8 +629,7 @@
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\RegistrarClienteForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\RegistrarClienteForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:36:02.797Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T21:36:02.797Z"
             },
             {
               "$type": "Document",
@@ -645,8 +641,7 @@
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\LoginForm.Designer.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T14:29:40.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T14:29:40.305Z"
             },
             {
               "$type": "Document",
@@ -669,8 +664,7 @@
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\LoginForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\LoginForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T21:34:16.342Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T21:34:16.342Z"
             },
             {
               "$type": "Document",
@@ -704,8 +698,7 @@
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\GenerarFacturaForm.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T18:14:10.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T18:14:10.507Z"
             },
             {
               "$type": "Document",
@@ -716,8 +709,7 @@
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\RegistrarUsuarioForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\RegistrarUsuarioForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T15:32:27.526Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T15:32:27.526Z"
             },
             {
               "$type": "Document",
@@ -728,8 +720,7 @@
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\VerReservasForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\VerReservasForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T15:32:25.486Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T15:32:25.486Z"
             },
             {
               "$type": "Document",
@@ -740,8 +731,7 @@
               "ToolTip": "D:\\HotelSOL\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\GenerarFacturaForm.resx",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\GenerarFacturaForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-20T14:32:42.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T14:32:42.743Z"
             }
           ]
         }

@@ -190,5 +190,15 @@ namespace HotelSOL1.FormsAPP
         {
 
         }
+
+        private void btnPago_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
