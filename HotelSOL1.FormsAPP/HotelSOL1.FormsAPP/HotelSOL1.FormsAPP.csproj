@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Content Include="appsettings.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="D:\HotelSOL\HotelSOL.DataAccess\HotelSOL.DataAccess.csproj" />
+    <ProjectReference Include="..\..\HotelSOL.DataAccess\HotelSOL.DataAccess.csproj" />
   </ItemGroup>
 
   <ItemGroup>
