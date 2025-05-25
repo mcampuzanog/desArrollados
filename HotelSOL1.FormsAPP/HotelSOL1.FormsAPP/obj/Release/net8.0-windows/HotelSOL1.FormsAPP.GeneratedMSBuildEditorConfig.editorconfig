@@ -6,19 +6,23 @@ build_property.ApplicationHighDpiMode =
 build_property.ApplicationUseCompatibleTextRendering = 
 build_property.ApplicationVisualStyles = 
 build_property.TargetFramework = net8.0-windows
+build_property.TargetFramework = net8.0-windows
+build_property.TargetPlatformMinVersion = 7.0
 build_property.TargetPlatformMinVersion = 7.0
 build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelSOL1.FormsAPP
-<<<<<<< Updated upstream
-build_property.ProjectDir = C:\Users\Administrator\OneDrive\Escritorio\uni\producto2CapaDatos(P59)_DiazRisso_Ingrid\HotelSOL.DataAccess\HotelSOL1.FormsAPP\HotelSOL1.FormsAPP\
-=======
-build_property.ProjectDir = C:\Users\guill\Documents\GitHub\desArrollados\HotelSOL1.FormsAPP\HotelSOL1.FormsAPP\
->>>>>>> Stashed changes
+build_property.ProjectDir = C:\Users\Usuario\Desktop\VirtuAlliance_2025\desArrollados\HotelSOL1.FormsAPP\HotelSOL1.FormsAPP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

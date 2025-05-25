@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{DCD37750-4A22-4E2B-9FDE-5C4344D9EB7F}|HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj|solutionrelative:hotelsol1.formsapp\\hotelsol1.formsapp\\hotelsol1.formsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCD37750-4A22-4E2B-9FDE-5C4344D9EB7F}|HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj|c:\\users\\usuario\\desktop\\virtualliance_2025\\desarrollados\\hotelsol1.formsapp\\hotelsol1.formsapp\\menuprincipalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DCD37750-4A22-4E2B-9FDE-5C4344D9EB7F}|HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj|C:\\Users\\Usuario\\Desktop\\VirtuAlliance_2025\\desArrollados\\hotelsol1.formsapp\\hotelsol1.formsapp\\menuprincipalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DCD37750-4A22-4E2B-9FDE-5C4344D9EB7F}|HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj|solutionrelative:hotelsol1.formsapp\\hotelsol1.formsapp\\menuprincipalform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,6 +57,10 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "HotelSOL1.FormsAPP",
@@ -65,21 +69,19 @@
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VirtuAlliance_2025\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-25T10:02:10.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T10:02:10.373Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HotelSOL1.FormsAPP",
+              "Title": "HotelSOL1.FormsAPP.csproj",
               "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\VirtuAlliance_2025\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "RelativeDocumentMoniker": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VirtuAlliance_2025\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-25T09:42:08.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T09:42:08.587Z"
             },
             {
               "$type": "Document",
@@ -129,8 +131,7 @@
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VirtuAlliance_2025\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\StockForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\StockForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T10:40:54.114Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-24T10:40:54.114Z"
             },
             {
               "$type": "Document",
@@ -141,8 +142,7 @@
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\VirtuAlliance_2025\\desArrollados\\HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\MenuPrincipalForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "HotelSOL1.FormsAPP\\HotelSOL1.FormsAPP\\MenuPrincipalForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T15:32:13.884Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-05-20T15:32:13.884Z"
             }
           ]
         }
